@@ -1,1 +1,29 @@
 // Mixins Here
+.flex-layout(@flex, @justify, @align){
+    display: flex;
+    flex-direction: @flex;
+	justify-content: @justify;
+    align-items: @align;
+}
+
+.btn-layout(@background, @color, @border){
+    background-color: @background;
+    color: @color;
+    border-radius: @border;
+    font-size: 2rem;
+    height: 3.5rem;
+    width: 10rem;
+    text-align: center;
+    line-height: 3.5rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color:@sea-shell;
+		color: @btn-bg-color;
+    }
+}
+
+.h1-layout {
+    font-size: 3.7rem;
+    padding: 1.6rem;
+}

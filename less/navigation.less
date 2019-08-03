@@ -1,1 +1,27 @@
 // Navigation code here
+
+.nav-bar {
+    margin-top: 30px;
+    width: 100%;
+    .flex-layout(column, none, center);
+    background-color: @wild-sand;
+    border: 1px solid @sea-shell;
+
+    h1 {
+        .h1-layout();
+    }
+
+
+    nav {
+        padding: 0 2rem 0 2rem;
+        margin: auto;
+        .flex-layout(row, space-between, center);
+
+            a {
+                padding: 0 1.5rem 1rem 1.5rem;
+                text-decoration: none;
+                color: @river-bend;
+                font-size: 1.6rem;
+            }
+        }        
+}

@@ -93,6 +93,11 @@
 
       .btn {
         .btn-layout(@btn-bg-color, @sea-shell, 0.5rem);
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
         
         @media @phone {
           width: 100%;
@@ -119,3 +124,41 @@
     }
   }
 }// home
+
+
+
+.container-sign-up{
+  padding: 0 1.25% 0 1.25%;
+  opacity: 0.8;
+  
+  .intro-sign-in{
+      width: 75%;
+      margin: 0 auto;
+  
+      img {
+        width: 100%;
+      }
+  }
+}
+
+  form {
+      .sign-up-form{
+        .flex-layout(column, none, center);
+      }
+
+        p {
+          margin: 1rem;
+        }
+
+      .confirm-sign-in {
+        .flex-layout(row, center, center);
+        padding: 1rem;
+
+        .cancel-button, .sign-up-button {
+          .btn-layout(@btn-bg-color, @sea-shell, 0.5rem);
+          border: none;
+          font-size: 1.6rem;
+          margin: 0.5rem;
+        }
+      }
+  }

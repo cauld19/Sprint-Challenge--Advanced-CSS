@@ -2,6 +2,14 @@
   font-size: 3.7rem;
   padding: 1.6rem;
 }
+/* sign-up */
+.input-layout {
+  width: 50%;
+  padding: 1.6rem;
+  margin: 0.5rem 0 1.6rem 0;
+  border: none;
+  background: #F1F1F1;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -302,6 +310,10 @@ footer {
   background-color: #F1F1F1;
   color: #22283A;
 }
+.home .walk .walk-text .btn a {
+  text-decoration: none;
+  color: inherit;
+}
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     width: 100%;
@@ -323,4 +335,51 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.container-sign-up {
+  padding: 0 1.25% 0 1.25%;
+  opacity: 0.8;
+}
+.container-sign-up .intro-sign-in {
+  width: 75%;
+  margin: 0 auto;
+}
+.container-sign-up .intro-sign-in img {
+  width: 100%;
+}
+form .sign-up-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+}
+form p {
+  margin: 1rem;
+}
+form .confirm-sign-in {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+form .confirm-sign-in .cancel-button,
+form .confirm-sign-in .sign-up-button {
+  background-color: #22283A;
+  color: #F1F1F1;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  height: 3.5rem;
+  width: 10rem;
+  text-align: center;
+  line-height: 3.5rem;
+  cursor: pointer;
+  border: none;
+  font-size: 1.6rem;
+  margin: 0.5rem;
+}
+form .confirm-sign-in .cancel-button:hover,
+form .confirm-sign-in .sign-up-button:hover {
+  background-color: #F1F1F1;
+  color: #22283A;
 }
